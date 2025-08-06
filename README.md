@@ -29,7 +29,7 @@ toggleFrame.Position = UDim2.new(0, 10, 0, 10)
 toggleFrame.BackgroundColor3 = Color3.fromRGB(60, 0, 120)
 toggleFrame.BorderSizePixel = 0
 toggleFrame.AnchorPoint = Vector2.new(0, 0)
-toggleFrame.BackgroundTransparency = 0.1
+toggleFrame.BackgroundTransparency = 1
 toggleFrame.Active = true
 toggleFrame.Draggable = true
 
