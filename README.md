@@ -2,6 +2,26 @@
 local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
 ScreenGui.Name = "MusashiModGUI"
 
+-- Notificação temporária
+local notif = Instance.new("TextLabel", ScreenGui)
+notif.Size = UDim2.new(0, 250, 0, 40)
+notif.Position = UDim2.new(0.5, -125, 0.1, 0)
+notif.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+notif.TextColor3 = Color3.new(1, 1, 1)
+notif.Font = Enum.Font.Gotham
+notif.TextSize = 14
+notif.BorderSizePixel = 0
+notif.BackgroundTransparency = 0.3
+notif.Text = "Criado por @mdsmusashi"
+notif.AnchorPoint = Vector2.new(0, 0)
+notif.TextStrokeTransparency = 0.7
+notif.Visible = true
+
+-- Some após 5 segundos
+task.delay(5, function()
+	notif:Destroy()
+end)
+
 -- Estética roxa: aplicar céu roxo
 local sky = Instance.new("Sky", game.Lighting)
 sky.SkyboxBk = "rbxassetid://98757147465135"
